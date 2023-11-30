@@ -1,0 +1,231 @@
+/* estils de la pagina */
+body {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+}
+
+/* header estil */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 10px 20px;
+    background-image: url('dos-hombres-esquiando-montana-abajo-invierno-generado-ia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 150px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+    box-shadow: -1px 0px 5px 5px rgba(0,0,0,1);
+    animation: apreixer 2s ease-in-out;
+}
+
+@keyframes apreixer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estil del menu */
+.menu {
+    position: absolute; 
+    top: 10px; 
+    right: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    box-shadow: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px; 
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+/* Estil del contigut principal  */
+.contingut {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* seccio sobre esqui  */
+.sobre-esqui {
+    margin-bottom: 250px; 
+}
+.sobre-esqui img {
+    float: right; 
+    max-width: 50%;
+    height: auto;
+}
+
+.sobre-esqui p {
+    float: left; 
+    max-width: 50%;
+    margin: 50px; 
+}
+
+.sobre-esqui::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* estil pel h2,h3 i p  */
+.contingut h2 {
+    color: #d0342c; 
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contingut h3 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contingut p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* estils per la galeria */
+.contingut .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px; 
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 250px; 
+}
+
+.contingut .galeria img, .contingut .galeria video {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.contingut .galeria video {
+    max-height: 250px; 
+    object-fit: cover; 
+}
+
+.contingut .galeria h2 {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+/* estil per la seccio pistes */
+.pistes {
+    margin-bottom: 50px; 
+}
+
+.pistes div {
+    clear: both; 
+    margin-bottom: 350px; 
+    
+}
+
+.pistes p {
+    float: right; 
+    width: 50%; 
+    margin: 0; 
+}
+
+.pistes img {
+    float: left; 
+    max-width: 30%; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.pistes::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.pistes h3 {
+    color: blue; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/* Estil per la seccio ENLLAÇ */
+.contingut .enlaces-interes {
+    margin-bottom: 250px; 
+}
+.contingut .enlaces-interes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contingut .enlaces-interes li {
+    margin-bottom: 10px;
+}
+
+.contingut .enlaces-interes a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contingut .enlaces-interes a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* peu de pagina */
+.peu-pagina {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 50px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.peu-pagina p {
+    margin: 5px 0; 
+    font-size: 26px; 
+}
